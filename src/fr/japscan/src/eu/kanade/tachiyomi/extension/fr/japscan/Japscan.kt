@@ -302,8 +302,8 @@ class Japscan : ConfigurableSource, ParsedHttpSource() {
         // Once we found the 8 strings, assuming they are always in the same order
         // Since Japscan reverse the char order, reverse the strings
         val stringLookupTables = listOf(
-            rawShortStringLookupTables[1].reversed() + rawLongStringLookupTables[5].reversed() + rawLongStringLookupTables[2].reversed() + rawLongStringLookupTables[0].reversed(),
-            rawShortStringLookupTables[2].reversed() + rawLongStringLookupTables[3].reversed() + rawLongStringLookupTables[4].reversed() + rawLongStringLookupTables[1].reversed(),
+            rawShortStringLookupTables[1].reversed() + rawLongStringLookupTables[1].reversed() + rawLongStringLookupTables[4].reversed() + rawLongStringLookupTables[0].reversed(),
+            rawShortStringLookupTables[2].reversed() + rawLongStringLookupTables[3].reversed() + rawLongStringLookupTables[5].reversed() + rawLongStringLookupTables[2].reversed(),
         )
 
         val scrambledData = document.getElementById("data")!!.attr("data-data")
